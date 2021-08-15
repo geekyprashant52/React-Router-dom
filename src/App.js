@@ -14,7 +14,7 @@ function HomePage() {
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/productdetails" component={ProductDetails} />
-                        <Route component={() => { return (<h1>Forbidden</h1>) }} />
+                        <Route path="*" component={() => { return (<h1>Forbidden</h1>) }} />
                     </Switch>
                 </div>
             </BrowserRouter>
